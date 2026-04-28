@@ -1,0 +1,151 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex; // Ativa o flex
+  align-items: center; // Centraliza na vertical
+  justify-content: center; // Centraliza na horizontal
+  z-index: 10000; // Valor bem alto para ignorar o resto do site
+}
+
+.modalBox {
+  background: white;
+  width: 90%;
+  max-width: 450px;
+  padding: 40px;
+  border-radius: 1.5rem;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+
+  h2 {
+    font-size: 1.8rem;
+    color: #1e293b;
+    margin-bottom: 8px;
+  }
+  p {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+  }
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  label {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .forgotPass {
+    font-size: 0.8rem;
+    color: #0055ff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    position: absolute;
+    left: 12px;
+    width: 20px;
+    color: #94a3b8;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    &:focus {
+      border-color: #0055ff;
+    }
+  }
+}
+
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnSubmit {
+  background-color: #0055ff;
+  color: white;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  span {
+    padding: 0 10px;
+    color: #94a3b8;
+    font-size: 0.8rem;
+  }
+}
+
+.btnGoogle {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  img {
+    width: 20px;
+  }
+}
+
+.footerText {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.9rem;
+  strong {
+    color: #0055ff;
+    cursor: pointer;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #94a3b8;
+}
