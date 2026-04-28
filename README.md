@@ -1,4 +1,4 @@
-# Abrigo Solidário 🐾🆘
+# Abrigo Solidário 🆘🌊
 
 ## 1. Apresentação da Ideia
 
