@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "./components/Header";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import LoginModal from "./components/LoginModal";
 import RegisterModal from "./components/RegisterModal";
 import Footer from "./components/Footer";
